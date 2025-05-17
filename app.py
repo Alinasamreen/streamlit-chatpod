@@ -1,3 +1,5 @@
+import os
+os.environ["GOOGLE_API_KEY"]=st.secrets["GOOGLE_API_KEY"]
 import streamlit as st
 st.title("streamlit chatbot")
 import streamlit as st
@@ -34,4 +36,5 @@ if user_input:
     
     # Display AI response
     st.chat_message("assistant").write(result.content)
+    
 
